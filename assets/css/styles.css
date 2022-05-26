@@ -1032,6 +1032,9 @@ input {
 }
 
 @media screen and (min-width: 1200px) {
+    .footer__content {
+    font-size: large;
+  } 
   .container {
     max-width: 1024px;
   }
