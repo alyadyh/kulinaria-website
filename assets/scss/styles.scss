@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color to match images */
-    /*Green dark 190 - Green Blue 200 - Purple Pink 290*/
+    /*Purple Pink 290*/
     --hue-color: 290;
 
     /* HSL color mode */
@@ -544,107 +544,6 @@ input{
             position: absolute;
             top: 2rem;
             right: 0;
-        }
-    }
-}
-
-/*=============== PLACES ===============*/
-.place{
-    &__card,
-    &__img{
-        height: 230px;
-    }
-    &__container{
-        grid-template-columns: repeat(2, max-content);
-        justify-content: center;
-    }
-    &__card{
-        position: relative;
-        overflow: var(--img-hidden);
-
-        &:hover .place__img{
-            transform: var(--img-scale);
-        }
-    }
-    &__img{
-        transition: var(--img-transition);
-    }
-    &__content,
-    &__title{
-        color: var(--white-color);
-    }
-    &__content{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: .75rem .75rem 1rem;
-    }
-    &__rating{
-        align-self: flex-end;
-        display: flex;
-        align-items: center;
-
-        &-icon{
-            font-size: .75rem;
-            margin-right: var(--mb-0-25);
-        }
-        &-number{
-            font-size: var(--small-font-size);
-        }
-    }
-    &__subtitle,
-    &__price{
-        display: block;
-    }
-    &__title{
-        font-size: var(--h3-font-size);
-        margin-bottom: var(--mb-0-25);
-    }
-    &__subtitle{
-        font-size: var(--smaller-font-size);
-        margin-bottom: var(--mb-1-25);
-    }
-    &__button{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        padding: .75rem 1rem;
-    }
-}
-
-/*=============== SUBSCRIBE ===============*/
-.subscribe{
-    &__bg{
-        background-color: var(--first-color-second);
-        padding: 2.5rem 0;
-    }
-    &__title,
-    &__description{
-        color: var(--white-color);
-    }
-    &__description{
-        text-align: center;
-        margin-bottom: var(--mb-2-5);
-    }
-    &__form{
-        background-color: var(--input-color);
-        padding: .5rem;
-        display: flex;
-        justify-content: space-between;
-    }
-    &__input{
-        width: 70%;
-        padding-right: .5rem;
-        background-color: var(--input-color);
-        color: var(--text-color);
-
-        &::placeholder{
-            color: var(--text-color);
         }
     }
 }
